@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+            <img src="dice-5.png" alt="Dice" class="dice dice-1">
+            <img src="dice-4.png" alt="Dice" class="dice dice-2">
+            
+            <input type="text" id="max-score" placeholder="Final score" class="final-score">
+            <span class='info'>i</span>
+
+            
+            
+        </div>
+        <div class="instruction">
+            <h3>INSTRUCTION</h3>
+            <p>1. You can enter the maximum number of points the players have to get to win this game.</p>
+            <p> 2. You can roll the dices many times and when you hold the sum of points will be added to your final score.</p>
+            <p>3. But if you have at least one 1 on the dice you loose points collected in this round, and its the next player turn.</p>
+            <p>4. Moreover if you have a 6 two times in a row on the same dice you loose all your points collected in the whole game.</p>
+            <br>
+            <span class='back info'>back</span>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
